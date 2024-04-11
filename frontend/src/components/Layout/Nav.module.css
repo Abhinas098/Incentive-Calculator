@@ -1,0 +1,53 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.navBarTitle {
+  font-size: 1.4rem;
+}
+
+.navBarLinks {
+  display: flex;
+}
+
+.navBarLink {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.navBarLink:hover {
+  text-decoration: underline;
+}
+
+.navBarLogout {
+  margin-left: 15px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size:15px;
+}
+
+.navBarLogout:hover {
+  text-decoration: underline;
+  color: rgb(135, 136, 137);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .navBar {
+    padding-right: 40px;
+  }
+}

@@ -1,0 +1,41 @@
+
+.authContainer {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20vh;
+
+  }
+  
+  .inputField {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    outline: none;
+    border-radius: 25px;
+  }
+  
+  .submitButton {
+    width:96%;
+    padding: 10px;
+    background-color: #353738;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #1b1d1f;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .authContainer {
+      width: 90%;
+    }
+  }
+  

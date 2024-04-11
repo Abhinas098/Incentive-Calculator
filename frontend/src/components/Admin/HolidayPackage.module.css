@@ -1,0 +1,128 @@
+.adminInterface {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin: 30px;
+  min-height: 70vh;
+}
+
+.inputCard,
+.viewCard {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputCard h2,
+.viewCard h2 {
+  margin-bottom: 10px;
+}
+
+.inputCard form {
+  display: grid;
+  gap: 10px;
+}
+
+.inputCard form label {
+  font-weight: bold;
+}
+
+.inputCard form input[type="text"],
+.inputCard form input[type="number"] {
+  width: 60vw;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inputCard form button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #585a5b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputCard form button:hover {
+  background-color: #434445;
+}
+
+.viewCard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.viewCard th,
+.viewCard td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.viewCard th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.viewCard tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.viewCard tr:hover {
+  background-color: #ddd;
+}
+
+.viewCard button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto 10px;
+  padding: 10px;
+  min-width: 70px;
+}
+
+.viewCard button:hover {
+  background-color: #bc545e;
+}
+
+@media screen and (max-width: 700px) {
+  table {
+    padding-top: 5%;
+    border: 0;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
